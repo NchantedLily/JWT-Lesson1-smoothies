@@ -1,4 +1,5 @@
 {
+  "homepage": "http://nchantedlily.github.io/JWT-Lesson1-smoothies",
   "name": "node-express-jwt-auth",
   "version": "1.0.0",
   "description": "",
@@ -14,6 +15,10 @@
     "validator": "^13.7.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/iamshaunjp/node-express-jwt-auth/issues"
   },
-  "homepage": "https://github.com/iamshaunjp/node-express-jwt-auth#readme"
+  "homepage": "https://github.com/iamshaunjp/node-express-jwt-auth#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
